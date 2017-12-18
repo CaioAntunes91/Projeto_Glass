@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*Esse arquivo foi criado para formatações que serão apenas utilizada no arquivo spec.html, portanto não há necessidade de sobrecarregar o código principal.*/
+
+section#conteudo{
+    width: 1200px;
+    margin: auto;
+}
+
+iframe#frame-spec{
+    height: 350px;
+    width: 550px;
+    
+    border: none; /*Essa propriedade não é necessária por foi utilizado o atributo */
+    overflow: hidden; /*Propriedades que envolvem a barra de rolar não funcionam com um iframe, sendo necessário utilizar o atributo scrolling.*/
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;/*Propriedades que envolvem a barra de rolar não funcionam com um ifram, sendo necessário utilizar o atributo scrolling. Poderia ser inserido no código de estilo da pagina google-glass-txt*/
+}
+
+img#esquema-googleGlass{
+    width: 600px;
+}

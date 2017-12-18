@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+ul#album-fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+    overflow: hidden; /*Testar se é realmente necessário*/
+}
+
+ul#album-fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    background-position: 50% 50%;/*Tanto no background-position como no background-size são aplicados dois valores porque é necessário dimensionar os dois eixos*/
+    /*background-size: 400px 400px; /*Esta propriedade foi desativada pois não afetava em nada, já que 400px é o tamanho original da imagem*/
+    transition: all 0.25s ease-in; /*Propriedade utilizada para dar um efeito de transição as propriedades. Em sua sintaxe deve ser informado primeiro quais propriedades serão atingidas, seguido do tempo do efeito, e por último qual o efeito (possíveis: linear, ease, ease-in, ease-out*/
+}
+
+ul#album-fotos li:hover{
+    background-size: 200px; /*Diminuindo o tamanho da imagem para caber dentro do "box"*/
+    transform: scale(1.5); /*Todo o item da lista é aumentado em 1,5 vezes, dando o efeito de que sai da caixa quando o mouse passa por cima*/
+}
+
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 9pt;
+    line-height: 370px; /*Aumentando a altura da linha, como a "legenda" está naturalmente centralizada em relação ao eixo vertical, ela termina sendo deslocada para a base da imagem, conforme desejado*/
+    padding: 5px;
+}
+
+ul#album-fotos li:hover span{/*Este seletor aplica as propriedades no span apenas quando o mouse estiver em cima da li. Percebe-se que para aplicar dessa forma o hover, que costuma vir ao final, veio no meio do seletor*/
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background-image: url(../_imagens/galeria-01.jpg);
+    background-repeat: no-repeat;
+}
+
+ul#album-fotos li#foto02{
+    background-image: url(../_imagens/galeria-02.jpg);
+    background-repeat: no-repeat;
+}
+
+ul#album-fotos li#foto03{
+    background-image: url(../_imagens/galeria-03.jpg);
+    background-repeat: no-repeat;
+}
+
+ul#album-fotos li#foto04{
+    background-image: url(../_imagens/galeria-04.jpg);
+    background-repeat: no-repeat;
+}
+
+ul#album-fotos li#foto05{
+    background-image: url(../_imagens/galeria-05.jpg);
+    background-repeat: no-repeat;
+}
+
+ul#album-fotos li#foto06{
+    background-image: url(../_imagens/galeria-06.jpg);
+    background-repeat: no-repeat;
+}

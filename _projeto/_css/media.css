@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div#tv-radio{
+    width: 900px;
+    height: 575px;
+    margin: auto; 
+    background-image: url(../_imagens/radio-tv.png);
+    background-repeat: no-repeat;
+    /*Até aqui colocamos a div centralizada com o tamanho exato da imagem utilizada. Dessa forma, o efeito desejado será alcançado com a imagem funcionando como plano de fundo*/
+}
+
+/*O próximo passo é posicionar o vídeo dentro da TV e o áudio dentro do rádio*/
+
+audio#musica{
+    position: relative;
+    left: 574px;
+    top: 275px;
+}
+
+video#filme{
+    position: relative;
+    left: -222px;
+    top: 110px;
+    width: 450px;
+    border: solid black;
+    
+}
