@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste JavaScript</title>
+    <script> /*Abaixo será criada uma função. Dentro de parenteses devem ser colocados os parâmetros da função e dentro das chaves o código.*/
+        function acendeLampada() {
+            document.getElementById("luz").src="_imagens/lampada-acesa.jpg"
+            
+        }
+        function apagaLampada() {
+            document.getElementById("luz").src="_imagens/lampada-apagada.jpg"
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>Acenda a Lâmpada</h1>
+    
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onclick="acendeLampada()" ondblclick="apagaLampada()"> <!--Com o atributo onclick no elemento imagem estou executando a função criada no JavaScript sempre que o usuári clicar sobre a imagem.-->
+    
+</body>
+</html>
